@@ -1,0 +1,6 @@
+Componente,Qué representa,Implementación
+Intercepto,Nivel medio de referencia en la escala logarítmica,Término paramétrico
+Patrón periódico,Variación que se repite dentro del período detectado en los datos,Spline cúbico cíclico
+Tendencia de largo plazo,Cambio gradual del nivel esperado de uso del dormidero a través del monitoreo,Spline B penalizado
+Distribución de conteo,Variabilidad de las observaciones alrededor del valor esperado,NB1
+Selección de suavidad,Cuánto puede curvarse cada componente sin seguir el ruido visita por visita,finite basis fallback

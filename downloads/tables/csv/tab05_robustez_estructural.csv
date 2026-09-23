@@ -1,0 +1,4 @@
+Modelo,Desde,Hasta,Cambio mediano,Límite inferior 95%,Límite superior 95%,P(cualquier declive),P(cualquier aumento),Diagnóstico
+Primario: RW1 anual,2019,2025,-8.076656633241136,-30.308866205119223,23.487815578852427,0.71675,0.28325,diagnostic_concerns_require_interpretation
+Efectos anuales intercambiables,2019,2025,-6.523635371420033,-30.26844693456322,24.017427845838046,0.6756666666666666,0.3243333333333333,diagnostic_concerns_require_interpretation
+Estado temporal mensual,2019,2025,-8.343093303855724,-27.167768640984377,14.925383980321191,0.783,0.217,diagnostic_concerns_require_interpretation

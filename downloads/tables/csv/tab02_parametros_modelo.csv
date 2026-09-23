@@ -1,0 +1,8 @@
+Símbolo,Cantidad,Prior,Mediana posterior,Límite inferior 95%,Límite superior 95%,Escala
+α,Nivel basal en escala logarítmica,"Normal(6.668, 1.5) [centrado empíricamente]",6.711721606326198,6.629186968941489,6.7956434567507955,log(individuos)
+φ,Parámetro de dispersión NB2; mayor valor implica menor sobredispersión,HalfNormal(10),1.0778676077877614,0.9675941990653262,1.2002347985060755,adimensional
+σ_s,Escala de las segundas diferencias del componente estacional,HalfNormal(0.5),2.4151609042314375,1.897135202305247,3.0118209658829027,log-escala
+σ_η,Variabilidad entre años vecinos del RW1,HalfNormal(0.5),0.5244837489316554,0.31195560883235324,0.93753340785496,log-escala
+d_max,Día del máximo estacional,Cantidad derivada,147.0,111.0,162.0,día del año
+d_min,Día del mínimo estacional,Cantidad derivada,284.0,274.0,297.0,día del año
+A_est,Amplitud estacional: 100·(máximo/mínimo−1),Cantidad derivada,428.0189759637376,294.5202902218465,601.6574539578295,%

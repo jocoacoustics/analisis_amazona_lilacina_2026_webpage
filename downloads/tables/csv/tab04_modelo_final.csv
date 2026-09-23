@@ -1,0 +1,8 @@
+Componente,Especificación
+Distribución condicional,Binomial negativa NB1
+Enlace,log
+Tendencia,Spline cúbica natural penalizada; df=9
+Penalización,λ=100000
+Estacionalidad,Fourier; K=2
+Período,"361.7 días, estimado antes del modelo"
+Incertidumbre principal,Bootstrap temporal por bloques de 60 días

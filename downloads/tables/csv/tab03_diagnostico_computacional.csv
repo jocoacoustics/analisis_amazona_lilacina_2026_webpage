@@ -1,0 +1,4 @@
+Modelo,Cadenas,Warm-up por cadena,Muestras por cadena,target_accept,Divergencias,R-hat máximo,ESS bulk mínimo,ESS tail mínimo,BFMI mínimo,Estado
+Primario: estacionalidad cíclica + RW1 anual,4,1000,1000,0.95,0,1.0,3609.0,2744.0,0.9660512610978864,diagnostic_concerns_require_interpretation
+Efectos anuales intercambiables,4,750,750,0.95,0,1.0,2940.0,1811.0,0.8557761054839228,diagnostic_concerns_require_interpretation
+Estado temporal mensual,4,750,750,0.95,0,1.01,589.0,1279.0,0.8196878489012026,diagnostic_concerns_require_interpretation

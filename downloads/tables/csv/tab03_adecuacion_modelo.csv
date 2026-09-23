@@ -1,0 +1,13 @@
+Chequeo,Resultado,Lectura
+Dispersión residual de Pearson,"1,067",Valores cercanos a 1 indican que la varianza condicional está razonablemente calibrada.
+Características globales reproducidas,"+28,6%",Fracción de estadísticas observadas dentro del 95% de las simulaciones del modelo.
+Estadísticos críticos fuera del 95%,"median, sd, p95","Mediana, dispersión o P95 fuera del rango simulado indican falta de ajuste relevante."
+Dependencia residual ≤30 días,Sí,"Si existe, el modelo dejó estructura temporal de corto plazo sin explicar."
+Validación cronológica final · MAE,"758,1",Error absoluto medio al predecir el tramo final sin utilizar sus respuestas para reestimar el modelo.
+Validación cronológica · log-score,"67,559",No supera al modelo sin estructura temporal. Menor pérdida logarítmica es mejor.
+Veredicto,No apto todavía para una conclusión definitiva de tendencia: al menos un chequeo preespecificado de adecuación falló.,Conclusión preespecificada de adecuación para inferencia de tendencia.
+Autocorrelación residual 1–7 días,"0,678","Envolvente nula 95%: -0,046 a 0,047; fuera de la envolvente."
+Autocorrelación residual 8–30 días,"0,467","Envolvente nula 95%: -0,028 a 0,022; fuera de la envolvente."
+Autocorrelación residual 31–90 días,"0,084","Envolvente nula 95%: -0,018 a 0,014; fuera de la envolvente."
+Autocorrelación residual 91–180 días,"-0,074","Envolvente nula 95%: -0,016 a 0,012; fuera de la envolvente."
+Autocorrelación residual 181–365 días,"-0,160","Envolvente nula 95%: -0,014 a 0,008; fuera de la envolvente."
