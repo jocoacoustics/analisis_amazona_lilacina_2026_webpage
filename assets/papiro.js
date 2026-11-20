@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('a[href^="#"]').forEach(a=>{
     const href=a.getAttribute('href'); if(!href||href==='#')return;
     a.addEventListener('click',e=>{
-      const target=document.querySelector(href);
+      const target=document.getElementById(decodeURIComponent(href.slice(1)));
       if(target&&article.contains(target)){
         e.preventDefault(); article.scrollTo({top:articlePosition(target)-18,behavior:'smooth'});
       }
@@ -63,4 +63,24 @@ document.addEventListener('DOMContentLoaded',()=>{
   article.addEventListener('scroll',activeSection,{passive:true});
   window.addEventListener('resize',activeSection,{passive:true});
   activeSection();
+
+  // Preserve the current scientific section when switching ES / EN.
+  const languageLink=document.getElementById('lang-switch');
+  if(languageLink){
+    const base=languageLink.getAttribute('href').split('#')[0];
+    languageLink.addEventListener('click',event=>{
+      const sections=[...article.querySelectorAll('section.section')];
+      const at=article.scrollTop+110;
+      const current=sections.filter(section=>articlePosition(section)<=at).pop() || sections[0];
+      if(current){event.preventDefault();window.location.href=base+'#'+encodeURIComponent(current.id);}
+    });
+  }
+  // An anchor loaded from the other language targets the inner article pane.
+  if(window.location.hash){
+    const target=document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    if(target && article.contains(target)){
+      article.scrollTop=Math.max(0,articlePosition(target)-18);
+      activeSection();
+    }
+  }
 });
